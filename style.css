@@ -213,4 +213,53 @@ RESPONSIVE (Celular y Tablets pequeñas)
         order: -1; 
         min-height: 400px; 
     }
+    
+    /* =========================================
+   ESTILO DEL FOOTER PROFESIONAL
+========================================= */
+.main-footer {
+    width: 100%;
+    padding: 3rem 0;
+    margin-top: 5rem; /* Espacio extra para que no pegue con la cruz */
+    text-align: center;
+    border-top: 1px solid var(--card-border);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.footer-content p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+}
+
+.footer-content span {
+    color: var(--accent); /* Tu verde Teal */
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 40px;
+    height: 2px;
+    background: var(--accent);
+    margin: 1.2rem auto;
+    opacity: 0.6;
+}
+
+.footer-tag {
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+/* Ajuste para que se vea bien en celular */
+@media (max-width: 850px) {
+    .main-footer {
+        margin-top: 3rem;
+        padding: 2rem 1rem;
+    }
+}
 }
